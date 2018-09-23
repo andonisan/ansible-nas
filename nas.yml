@@ -1,4 +1,4 @@
----
+﻿---
 - hosts: all
   tasks:
   - import_tasks: tasks/general.yml
@@ -9,6 +9,9 @@
     when: portainer_enabled == true
     tags: portainer
 
+  - import_tasks: tasks/tautulli.yml
+    when: tautulli_enabled == true
+    tags: tautulli
   - import_tasks: tasks/transmission.yml
     when: transmission_enabled == true
     tags: transmission
@@ -52,7 +55,7 @@
   - import_tasks: tasks/stats.yml
     when: stats_enabled == true
     tags: stats
-  
-  roles:	
-    - bertvv.samba	
-    - geerlingguy.docker 
+
+  roles:
+    - bertvv.samba
+    - geerlingguy.docker
