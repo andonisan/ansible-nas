@@ -12,9 +12,9 @@ name: Create Plex Directories
     pull: true
     volumes:
       - "{{ plex_config_directory }}:/config:rw"
-      - "{{ plex_movies_directory }}:/movies:rw"
-      - "{{ plex_tv_directory }}:/tv:rw"
-      - "{{ plex_music_directory }}:/music:rw"
+      - "{{ plex_movies_directory }}:/data/movies:rw"
+      - "{{ plex_tv_directory }}:/data/tv:rw"
+      - "{{ plex_music_directory }}:/data/music:rw"
       - "/etc/timezone:/etc/timezone:ro"
     network_mode: "host"
     env:
