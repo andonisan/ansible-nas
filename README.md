@@ -23,9 +23,11 @@ just a stock Ubuntu install, some clever Ansible config and a bunch of docker co
   - [Grafana](https://github.com/grafana/grafana) - Dashboarding tool
   - [InfluxDB](https://github.com/influxdata/influxdb) - Time series database used for stats collection
   - [Nextcloud](https://nextcloud.com/) - A self-hosted Dropbox alternative
+  - [Plex](https://www.plex.tv/) Plex Media Server
   - [Tautulli](http://tautulli.com/) Monitor Your Plex Media Server
   - [Portainer](https://portainer.io/) for managing Docker and running custom images
   - [Radarr](https://radarr.video/) for organising and downloading movies
+  - [Lidarr](https://lidarr.audio/) for organising and downloading music
   - [Sickrage](https://sickrage.github.io/) for managing TV episodes
   - [Sonarr](https://sonarr.tv/) for downloading and managing TV episodes
   - [Telegraf](https://github.com/influxdata/telegraf) - Metrics collection agent
